@@ -1,0 +1,211 @@
+.section {
+  padding: var(--space-3xl) 0;
+  background: var(--color-obsidian);
+  position: relative;
+  overflow: hidden;
+}
+
+.glowBg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 50%, rgba(74, 63, 143, 0.1) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.wrapper {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: var(--space-sm);
+}
+
+.label::before,
+.label::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 1px;
+  background: var(--color-gold);
+}
+
+.testimonialBox {
+  margin: 3rem 0;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(212, 175, 106, 0.15);
+  border-radius: var(--radius-xl);
+  position: relative;
+  overflow: hidden;
+  animation: fade-in-scale 0.5s ease;
+}
+
+.testimonialBox::before {
+  content: '"';
+  position: absolute;
+  top: -30px;
+  left: 20px;
+  font-family: var(--font-serif);
+  font-size: 10rem;
+  color: rgba(212, 175, 106, 0.06);
+  line-height: 1;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.star {
+  color: var(--color-gold);
+  font-size: 1.2rem;
+  animation: fadeIn 0.5s ease;
+}
+
+.text {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--color-obsidian);
+  flex-shrink: 0;
+}
+
+.authorName {
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.authorRole {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-align: left;
+}
+
+/* Dots */
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.dotActive {
+  background: var(--color-gold);
+  width: 24px;
+  border-radius: 4px;
+}
+
+/* Mini Cards */
+.miniCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+
+.miniCard {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  transition: all 0.3s;
+  opacity: 0.5;
+}
+
+.miniCard:hover {
+  opacity: 0.8;
+  border-color: rgba(212, 175, 106, 0.15);
+}
+
+.miniActive {
+  opacity: 1 !important;
+  border-color: rgba(212, 175, 106, 0.3) !important;
+  background: rgba(212, 175, 106, 0.05);
+}
+
+.miniAvatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--color-obsidian);
+  flex-shrink: 0;
+}
+
+.miniName {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.miniRole {
+  font-size: 0.65rem;
+  color: var(--color-text-muted);
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .testimonialBox {
+    padding: 2rem 1.5rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .miniCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
