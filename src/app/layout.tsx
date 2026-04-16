@@ -6,8 +6,9 @@ import Footer from "@/components/Footer/Footer";
 import StarField from "@/components/StarField/StarField";
 import CursorGlow from "@/components/CursorGlow/CursorGlow";
 import CartProvider from "@/contexts/CartContext";
+import ScrollReveal from "@/components/ScrollReveal";
 
-const playfair = Playfair_Display({ 
+const playfair = Playfair_Display({
   subsets: ["vietnamese", "latin"],
   variable: "--font-serif",
   display: "swap",
@@ -97,10 +98,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi" className={`${playfair.variable} ${montserrat.variable} ${cinzel.variable}`}>
-       <body>
+      <body>
         <CartProvider>
           <StarField />
           <CursorGlow />
+          <ScrollReveal />
           <Navbar />
           <main className="page-transition">{children}</main>
           <Footer />

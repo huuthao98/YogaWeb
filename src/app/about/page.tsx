@@ -44,7 +44,7 @@ export default function AboutPage() {
             Câu Chuyện Của <em className="text-gradient-gold">Yoga Lam Hương</em>
           </h1>
           <p className="section-subtitle">
-            Được thành lập từ niềm đam mê thuần khiết với yoga, Yoga Lam Hương là nơi giao thoa 
+            Được thành lập từ niềm đam mê thuần khiết với yoga, Yoga Lam Hương là nơi giao thoa
             giữa truyền thống cổ xưa và sự xa hoa hiện đại tại Việt Nam.
           </p>
         </div>
@@ -58,12 +58,12 @@ export default function AboutPage() {
               <div className="section-label">Câu Chuyện</div>
               <h2 className="section-title">Khởi Đầu Từ<br /><em className="text-gradient-gold">Một Hơi Thở</em></h2>
               <p style={{ color: "var(--color-text-secondary)", lineHeight: "1.9", marginBottom: "1.5rem", fontSize: "0.95rem" }}>
-                Năm 2012, Master Linh Trần sau 10 năm tu học yoga tại Ấn Độ và Nepal đã mang về 
+                Năm 2012, Master Linh Trần sau 10 năm tu học yoga tại Ấn Độ và Nepal đã mang về
                 Việt Nam không chỉ kỹ thuật yoga mà còn cả triết lý sống tỉnh thức sâu sắc.
               </p>
               <p style={{ color: "var(--color-text-secondary)", lineHeight: "1.9", marginBottom: "2rem", fontSize: "0.95rem" }}>
-                Lam Hương — tiếng Sanskrit có nghĩa là &ldquo;hạnh phúc thuần khiết&rdquo; — chính là tầm nhìn 
-                cho không gian yoga này: nơi mỗi học viên tìm thấy không chỉ sức khoẻ thể chất, 
+                Lam Hương — tiếng Sanskrit có nghĩa là &ldquo;hạnh phúc thuần khiết&rdquo; — chính là tầm nhìn
+                cho không gian yoga này: nơi mỗi học viên tìm thấy không chỉ sức khoẻ thể chất,
                 mà còn là sự bình yên và hạnh phúc sâu thẳm từ nội tâm.
               </p>
               <Link href="/contact" className="btn btn-gold">Đặt Lịch Tham Quan</Link>
@@ -106,7 +106,7 @@ export default function AboutPage() {
             <div className="section-label">Đội Ngũ</div>
             <h2 className="section-title">Gặp Gỡ Các <em className="text-gradient-gold">Giảng Viên</em></h2>
             <p className="section-subtitle text-center" style={{ margin: "0 auto" }}>
-              Mỗi giảng viên của Yoga Lam Hương là người đã sống và thực hành yoga sâu sắc, 
+              Mỗi giảng viên của Yoga Lam Hương là người đã sống và thực hành yoga sâu sắc,
               được đào tạo tại các trường danh tiếng ở Ấn Độ và Nepal.
             </p>
           </div>
@@ -136,7 +136,7 @@ export default function AboutPage() {
         <div className="container-narrow">
           <h2 className="section-title">Hãy Đến Và <em className="text-gradient-gold">Trải Nghiệm</em></h2>
           <p className="section-subtitle text-center" style={{ margin: "0 auto 2.5rem" }}>
-            Không gian và đội ngũ Yoga Lam Hương sẵn sàng chào đón bạn. 
+            Không gian và đội ngũ Yoga Lam Hương sẵn sàng chào đón bạn.
             Buổi học thử đầu tiên hoàn toàn miễn phí.
           </p>
           <Link href="/contact" className="btn btn-gold">Đặt Lịch Học Thử</Link>
