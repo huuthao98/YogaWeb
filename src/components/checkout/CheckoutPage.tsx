@@ -36,7 +36,9 @@ export default function CheckoutPage() {
     return (
       <div className={styles.emptyPage}>
         <div className={styles.emptyBox}>
-          <div style={{ fontSize: "4rem", opacity: 0.2, marginBottom: "1.5rem" }}>☸</div>
+          <div style={{ display: 'flex', justifyContent: 'center', opacity: 0.2, marginBottom: "1.5rem" }}>
+            <Image src="/logo.jpg" alt="Logo" width={64} height={64} style={{ filter: 'grayscale(1)' }} />
+          </div>
           <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "1.8rem", marginBottom: "0.75rem" }}>
             Giỏ hàng trống
           </h2>
@@ -53,7 +55,9 @@ export default function CheckoutPage() {
     <div className={styles.page}>
       <div className={styles.header}>
         <Link href="/" className={styles.logoLink}>
-          <span className={styles.logoIcon}>☸</span>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <Image src="/logo.jpg" alt="Yoga Lam Hương Logo" width={32} height={32} />
+          </div>
           <span className={styles.logoText}>YOGA LAM HƯƠNG</span>
         </Link>
         <div className={styles.steps}>

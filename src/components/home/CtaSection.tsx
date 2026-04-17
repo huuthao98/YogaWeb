@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./CtaSection.module.css";
 
 export default function CtaSection() {
@@ -18,7 +19,9 @@ export default function CtaSection() {
       </div>
 
       <div className={styles.inner}>
-        <div className={styles.lotus}>☸</div>
+        <div className={styles.lotus}>
+          <Image src="/logo.jpg" alt="Logo" width={48} height={48} style={{ opacity: 0.5 }} />
+        </div>
         <div className="section-label">Bắt Đầu Ngay Hôm Nay</div>
         <h2 className={styles.title}>
           Sẵn Sàng Bắt Đầu

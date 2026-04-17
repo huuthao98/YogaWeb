@@ -116,7 +116,7 @@ export default function ClassesSection() {
                 </div>
                 <div className={styles.cardFooter}>
                   <span className={styles.price}>{cls.price}<sub>/buổi</sub></span>
-                  <Link href={`/classes#${cls.id}`} className="btn btn-outline">
+                  <Link href={`/classes#${cls.id}`} className={`btn btn-outline ${styles.bookBtn}`}>
                     Đặt Lớp
                   </Link>
                 </div>

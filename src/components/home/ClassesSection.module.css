@@ -128,6 +128,8 @@
   justify-content: space-between;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   padding-top: 1.25rem;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .price {
@@ -148,6 +150,18 @@
 .cta {
   text-align: center;
   margin-top: 3rem;
+}
+
+@media (max-width: 480px) {
+  .cardFooter {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .bookBtn {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
 }
 
 @media (max-width: 1024px) {

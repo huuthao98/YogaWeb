@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./Footer.module.css";
 
 const footerLinks = {
@@ -39,7 +40,9 @@ export default function Footer() {
           {/* Brand */}
           <div className={styles.brand}>
             <Link href="/" className={styles.logo}>
-              <span className={styles.logoIcon}>☸</span>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <Image src="/logo.jpg" alt="Yoga Lam Hương Logo" width={42} height={42} />
+              </div>
               <div>
                 <span className={styles.logoText}>YOGA LAM HƯƠNG</span>
                 <span className={styles.logoTagline}>Nghệ Thuật Sống Tỉnh Thức</span>

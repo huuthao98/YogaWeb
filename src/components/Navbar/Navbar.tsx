@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useCart } from "@/contexts/CartContext";
 import CartDrawer from "@/components/CartDrawer/CartDrawer";
@@ -53,7 +54,9 @@ export default function Navbar() {
         <div className={styles.inner}>
           {/* Logo */}
           <Link href="/" className={styles.logo}>
-            <span className={styles.logoIcon}>☸</span>
+            <div className={styles.logoIconWrapper}>
+              <Image src="/logo.jpg" alt="Logo" width={36} height={36} className={styles.logoImg} />
+            </div>
             <div>
               <span className={styles.logoText}>LAM HƯƠNG</span>
               <span className={styles.logoSub}>YOGA</span>
@@ -113,7 +116,9 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <div className={`${styles.mobileMenu} ${menuOpen ? styles.mobileOpen : ""}`}>
         <div className={styles.mobileInner}>
-          <div className={styles.mobileDecor}>☸</div>
+          <div className={styles.mobileDecor}>
+            <Image src="/logo.jpg" alt="Logo" width={40} height={40} style={{ opacity: 0.4 }} />
+          </div>
           {navLinks.map((link, i) => (
             <Link
               key={link.href}

@@ -47,7 +47,9 @@ export default function CartDrawer({ open, onClose }: CartDrawerProps) {
 
         {items.length === 0 ? (
           <div className={styles.empty}>
-            <div className={styles.emptyIcon}>☸</div>
+            <div className={styles.emptyIcon}>
+              <Image src="/logo.jpg" alt="Yoga Lam Hương Logo" width={48} height={48} style={{ opacity: 0.3 }} />
+            </div>
             <p className={styles.emptyText}>Giỏ hàng đang trống</p>
             <p className={styles.emptyDesc}>Khám phá bộ sưu tập yoga cao cấp của chúng tôi</p>
             <Link href="/shop" className="btn btn-outline" onClick={onClose} style={{ marginTop: "1.5rem" }}>

@@ -23,12 +23,10 @@
 .bgGradient {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(10, 10, 20, 0.8) 0%,
-    rgba(26, 12, 46, 0.5) 50%,
-    rgba(10, 10, 20, 0.7) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(10, 10, 20, 0.8) 0%,
+      rgba(26, 12, 46, 0.5) 50%,
+      rgba(10, 10, 20, 0.7) 100%);
 }
 
 /* Geometry */
@@ -79,12 +77,15 @@
     transform: translateY(0) rotate(0deg);
     opacity: 0;
   }
+
   10% {
     opacity: 1;
   }
+
   90% {
     opacity: 0.5;
   }
+
   100% {
     transform: translateY(-100vh) rotate(360deg);
     opacity: 0;
@@ -134,8 +135,15 @@
 }
 
 @keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Title */
@@ -162,8 +170,15 @@
 }
 
 @keyframes slideInLeft {
-  from { opacity: 0; transform: translateX(-40px); }
-  to { opacity: 1; transform: translateX(0); }
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .titleItalic {
@@ -172,6 +187,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+
+  display: flex;
+  width: 100%;
 }
 
 /* Subtitle */
@@ -188,7 +206,9 @@
 }
 
 @keyframes fadeIn {
-  to { opacity: 1; }
+  to {
+    opacity: 1;
+  }
 }
 
 /* CTAs */
@@ -275,8 +295,15 @@
 }
 
 @keyframes scrollDown {
-  0% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(14px); opacity: 0; }
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(14px);
+    opacity: 0;
+  }
 }
 
 /* Bottom gradient */
@@ -291,9 +318,33 @@
   z-index: 5;
 }
 
+@media (max-width: 1280px) {
+  .content {
+    padding-top: calc(var(--nav-height) * 0.9);
+  }
+}
+
+@media (max-width: 1024px) {
+  .content {
+    padding-top: calc(var(--nav-height) * 0.8);
+  }
+
+  .inner {
+    padding-top: 3rem;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
     min-height: 100svh;
+  }
+
+  .content {
+    padding-top: calc(var(--nav-height) * 0.65);
+  }
+
+  .inner {
+    padding-top: 2rem;
   }
 
   .geometry1 {
@@ -309,5 +360,17 @@
 
   .scrollHint {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding-top: calc(var(--nav-height) * 0.5);
+  }
+
+  .inner {
+    padding-top: 1.25rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }

@@ -92,7 +92,7 @@ body {
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -312,7 +312,7 @@ img {
 }
 
 .btn:hover::before {
-  opacity: 1;
+  opacity: 0.3;
 }
 
 .btn-gold {
@@ -327,6 +327,7 @@ img {
 .btn-gold:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-gold-glow);
+  color: var(--color-white)
 }
 
 .btn-outline {
@@ -666,7 +667,19 @@ label {
 /* ============================================
    RESPONSIVE
    ============================================ */
+@media (max-width: 1280px) {
+  :root {
+    --space-3xl: 6rem;
+    --space-2xl: 4rem;
+  }
+}
+
 @media (max-width: 1024px) {
+  :root {
+    --space-3xl: 5rem;
+    --space-2xl: 3.5rem;
+  }
+
   .grid-4 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -679,6 +692,8 @@ label {
 @media (max-width: 768px) {
   :root {
     --nav-height: 70px;
+    --space-3xl: 4rem;
+    --space-2xl: 3rem;
   }
 
   .container {
@@ -686,6 +701,10 @@ label {
   }
 
   .section {
+    padding: var(--space-3xl) 0;
+  }
+
+  .section-sm {
     padding: var(--space-2xl) 0;
   }
 
@@ -701,6 +720,11 @@ label {
 }
 
 @media (max-width: 480px) {
+  :root {
+    --space-3xl: 3rem;
+    --space-2xl: 2rem;
+  }
+
   .btn {
     padding: 0.75rem 1.5rem;
     font-size: 0.7rem;
